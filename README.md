@@ -4,6 +4,9 @@
 
 
 ## Setting
+python: 3.8.10
+pip: 22.1.2
+django: 2.2.5
 
 pipenv
 - npm 같이 관리 해주는 python 도구
@@ -16,11 +19,20 @@ linting: python은 runtime 언어이기 때문에 이를 보완하기 위해서 
 formatting: 관습에 따라 저장시 자동으로 format 해준다.
 * black 사용
 
+# Useage Django
+- `django-admin startapp [app_name]` -> application 생성, 이름은 복수형
+- application은 funtion의 집합
+
 ## Migration
 - django에서 sql을 사용할 때 migration을 통해 설정 할 수 있다.
-- `python manage.py makemigration`을 통해 models.py의 변경사항을 확인하고 migrate를 통해 업데이트 한다.
+- 변경사항이 생기면 `python manage.py makemigration`을 통해 migration을 생성한다.
+- `python manage.py migrate` 을 통해 migration을 반영하여 db 업데이트
 
-`django-admin startapp [app_name]` -> application 생성, 이름은 복수형
+## Fields
+- `models.py`에 따로 커스텀해서 만들 수 있다.
+- 기본적으로 django에서 제공하는 Field를 사용할 수 있다.
+- `models.ImageField` `models.CharField` `models.TextField` `models.DateField` `models.BooleanField` 등의 Field가 있다.
+
 
 chanhi
 1q2w3e4r!
