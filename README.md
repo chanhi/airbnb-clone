@@ -32,6 +32,14 @@ formatting: 관습에 따라 저장시 자동으로 format 해준다.
 - `models.py`에 따로 커스텀해서 만들 수 있다.
 - 기본적으로 django에서 제공하는 Field를 사용할 수 있다.
 - `models.ImageField` `models.CharField` `models.TextField` `models.DateField` `models.BooleanField` 등의 Field가 있다.
+- `def __str__()`
+- ForeignKeyField , on_delete
+- ManyToManyField
+
+## core
+- 베이스가 되는 folder로, 중복되는 부분을 core로 부터 확장을 한다.
+- `class Meta:  abstract = True` -> 추상(abstract) 모델로 설정, db에 등록되지 않는다.
+
 
 
 chanhi
