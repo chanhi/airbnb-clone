@@ -23,6 +23,10 @@ formatting: 관습에 따라 저장시 자동으로 format 해준다.
 - `django-admin startapp [app_name]` -> application 생성, 이름은 복수형
 - application은 funtion의 집합
 
+## config
+- config/settings
+- config/urls
+
 ## Migration
 - django에서 sql을 사용할 때 migration을 통해 설정 할 수 있다.
 - 변경사항이 생기면 `python manage.py makemigration`을 통해 migration을 생성한다.
@@ -35,12 +39,13 @@ formatting: 관습에 따라 저장시 자동으로 format 해준다.
 - `def __str__()`
 - ForeignKeyField , on_delete
 - ManyToManyField
+- search_fields([App]) :default로 부분 일치 -> ^app: 앞부분만 일치, =app: 정확히 일치
 
 ## core
 - 베이스가 되는 folder로, 중복되는 부분을 core로 부터 확장을 한다.
 - `class Meta:  abstract = True` -> 추상(abstract) 모델로 설정, db에 등록되지 않는다.
 
-
+* Managers, QuerySets
 
 chanhi
 1q2w3e4r!
