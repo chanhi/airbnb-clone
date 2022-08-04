@@ -46,6 +46,6 @@ formatting: 관습에 따라 저장시 자동으로 format 해준다.
 - `class Meta:  abstract = True` -> 추상(abstract) 모델로 설정, db에 등록되지 않는다.
 
 * Managers, QuerySets
-
+- QuerySets (modelsName)_set
 chanhi
 1q2w3e4r!
