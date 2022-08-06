@@ -34,7 +34,7 @@ class User(AbstractUser):
 
     """Custom User Model"""
 
-    avatar = models.ImageField(blank=True)
+    avatar = models.ImageField(upload_to="avatars", blank=True)
     gender = models.CharField(
         default="male", choices=GENDER_CHOICES, max_length=10, blank=True
     )
