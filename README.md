@@ -49,6 +49,34 @@ django: 2.2.5
 - 베이스가 되는 folder로, 중복되는 부분을 core로 부터 확장을 한다.
 - `class Meta:  abstract = True` -> 추상(abstract) 모델로 설정, db에 등록되지 않는다.
 
+### manage python commands
+- `from django.core.management.base import BaseCommand` 로 `BaseCommand` import
+- class에 argument로 BaseCommand를 전달해준다.
+- `def add_arguments(self, parser):`로 추가하고자 하는 command 추가
+```python
+def add_arguments(self, parser):
+    parser.add_argument(
+        "--times", help="How many times do you want me work"
+    )
+```
+- `add_arguments`는 `def handle(self, *args, **options):`를 가져야하기 때문에 추가한다.
+    -BaseCommand의 하위class들은 handle을 가져야함
+
+```python
+def handle(self, *args, **options):
+    times = options.get("times")
+    for t in range(0, int(times)):
+        self.stdout.write(self.style.SUCCESS("I love you"))
+```
+```
+#Terminer
+>python manage.py [filename] --times 50
+I love you *50
+```
+
+### seed
+- test db를 만들기 위해 사용
+
 * Managers, QuerySets
 - QuerySets (modelsName)_set
 
