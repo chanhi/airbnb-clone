@@ -77,8 +77,11 @@ I love you *50
 ### seed
 - test db를 만들기 위해 사용
 
+### views
+- views, url
+- templates
+
 * Managers, QuerySets
 - QuerySets (modelsName)_set
-
 chanhi
 1234
