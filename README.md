@@ -80,6 +80,13 @@ I love you *50
 ### views
 - views, url
 - templates
+- paginator
+- class based views
+- Django classy에서 view class정보 참고
+
+#### ListView
+
+#### DetailView
 
 * Managers, QuerySets
 - QuerySets (modelsName)_set
