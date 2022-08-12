@@ -83,6 +83,7 @@ I love you *50
 - paginator
 - class based views
 - Django classy에서 view class정보 참고
+- function based views
 
 #### ListView
 
