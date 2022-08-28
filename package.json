@@ -1,0 +1,23 @@
+{
+  "name": "airbnb-clone",
+  "version": "1.0.0",
+  "description": "python: 3.8.10\r pip: 22.1.2\r django: 2.2.5",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chanhi/airbnb-clone.git"
+  },
+  "scripts": {
+    "css": "gulp"
+  },
+  "homepage": "https://github.com/chanhi/airbnb-clone#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.54.5",
+    "tailwindcss": "^3.1.8"
+  }
+}

@@ -154,3 +154,4 @@ cython_debug/
 
 # Folder
 uploads/
+node_modules/
